@@ -4,7 +4,7 @@
 ###Serial GC
 ####语法：
 `
--Xmx512m -Xms512m -PrintGCDetails -XX:+UseSerialGC
+-Xmx512m -Xms512m -XX:PrintGCDetails -XX:+UseSerialGC
 `
 
 串行GC共计回收16次，其中年轻代回收9次，FullGC回收7次，平均回收时长38.1ms,FullGC
@@ -20,7 +20,7 @@
 ###Parallel GC
 ####语法：
 `
--Xmx512m -Xms512m -PrintGCDetails -XX:+UseParallelGC
+-Xmx512m -Xms512m -XX:PrintGCDetails -XX:+UseParallelGC
 `
 
 并行GC共计回收32次，其中年轻代回收23次，FullGC回收9次，平均回收时长18.7ms,FullGC
@@ -34,7 +34,7 @@
 ###CMS GC
 ####语法：
 `
--Xmx512m -Xms512m -PrintGCDetails -XX:+UseConcMarkSweepGC
+-Xmx512m -Xms512m -XX:PrintGCDetails -XX:+UseConcMarkSweepGC
 `
 
 并行GC共计回收18次，其中年轻代回收15次，FullGC回收5次。年轻代平均回收时长27.33ms,
@@ -49,7 +49,7 @@
 ###G1 GC
 ####语法：
 `
--Xmx512m -Xms512m -PrintGCDetails -XX:+UseG1GC
+-Xmx512m -Xms512m -XX:PrintGCDetails -XX:+UseG1GC
 `
 
 并行GC共计回收18次，其中年轻代回收15次，FullGC回收5次。年轻代平均回收时长27.33ms,
